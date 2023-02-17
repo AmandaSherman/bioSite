@@ -1,64 +1,84 @@
 * {
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    background: #1d2021;
 }
   
-.header {
-    border: 1px solid red;
-    padding: 15px;
+[class^="box-"] {
+    background-color: rgb(67, 101, 118);
+    display: grid;
 }
   
-.content::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-    border: none;
-}
+.container {
+    display: grid;
+    gap: 1px;
+    height: 100vh;;
+    grid-template-areas:
+        "A B B B  B B B B  B B B B"
+        "A B B B  B B B B  B B B B"
+        "A B B B  B B B B  B B B B"
+        "A B B B  B B B B  B B B B"
+        "A B B B  B B B B  B B B B"
+        "A B B B  B B B B  B B B B"
+        "A B B B  B B B B  B B B B"
+        "C C C C  C C C C  C C C C"
+  }
   
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-
-#nav a {
-    padding-left: 50px;
+.box-sidebar {
+    font-size: .8em;
     text-decoration: none;
-    font-size: .4em;
     font-weight: 200;
-    color: #919ca1;
+    font-family: 'Montserrat', sans-serif;
+    grid-area: A;
+    text-align: center;
+    align-content: center;
+}
+
+.box-sidebar li a{
+    text-decoration: none;
+    color: #000;
+    justify-items: end;
+}
+
+
+  
+.box-content {
+    font-size: 36pt;
+    font-weight: 200;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 15%;
+    padding-top: 15%;
+    grid-area: B;
+}
+  
+.box-footer {
+    grid-area: C;
+ 
+}
+
+.box-footer li {
+    float: left;
+    padding-left: 15px;
+    list-style: none;
+    position: bottom;
+ 
+
+}
+
+.box-footer a {
+    color: #2f4052;
+    font-size: larger;
+ 
 }
 
 #portrait {
-    border-radius: 200px;
-    width: 200px;
-    height: 200px;
     object-fit: cover;
-    object-position: 15% 100%;
+    object-position: 23% 100%;
+    border-radius: 200px;
+
 }
 
-.content {
-    font-size: 2em;
-    color: #178abf;
-    font-weight: 100;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow: 20px, 10px, 10px, #035d87;
-}
+.box-sidebar img {
+    justify-self: center;
 
-#line {
-    max-lines;
-    overflow: hidden;
 }
