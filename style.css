@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: rgba(67, 101, 118, .40);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    box-sizing: border-box;
+}
+
+#sidebar img {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    object-fit: cover;
+}
+
+#sidebar button {
+    margin-top: 20px;
+    padding: 10px 10px;
+    background-color: #82aae64e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#sidebar button:hover {
+    background-color: #f0808047;
+    box-shadow: 0 10px 20px rgba(215, 67, 67, 0.374);
+    transition: box-shadow  ease-in-out;
+    cursor: pointer;
+}
+
+#sidebar button:first-child {
+    margin-top: 0;
+}
+
+#main {
+
+    background-image: url("/Users/amandaleigh/code/images/kevinart3.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 15%;
+    color: rgba(42, 101, 138, 0.9);
+    text-align: center;
+}
+
+#main h1 {
+    font-family: 'Cinzel Decorative';
+    font-size: 55pt;
+    margin: 0;
+}
+
+#main h2 {
+    font-family: 'Phudu';
+    font-size: 30pt;
+    margin: 0;
+}
+
+.box {
+    color: rgba(114, 178, 218, 0.839);
+    background-color: #074a677b;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(134, 185, 236, 0.444);
+    margin: 80px auto;
+    width: 80%; /* Change this value to adjust the width of the box */
+    overflow: hidden;
+}
+
+.box {
+    color: rgba(114, 178, 218, 0.839);
+    background-color: #074a677b;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(134, 185, 236, 0.444);
+    margin: 80px auto;
+    width: 80%; /* Change this value to adjust the width of the box */
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(214, 208, 208, 0.2);
+    transition: box-shadow ease-in-out;
+}
+
+  .box h2 {
+    font-size: 28px;
+
+  }
+  
+  .box p {
+    font-size: 20px;
+    font-family: 'Montserrat' sans-serif;
+    line-height: 1.6;
+
+  }
+  
+  .content-photos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .content-photos img {
+    height: 350px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .content-photos img:hover {
+    height: 350px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow ease-in-out;
+  }
+
+  #work-experience, #education {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+  }
+  
+  .job, .school {
+    background-color: #041d287b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  h3, h4 {
+    font-family: 'Phudu';
+    margin: 0;
+  }
+  
+  ul li {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+
+  
+  li::before {
+    color: #acdaec;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  
+  .job:hover, .school:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+
+#bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #9c303000;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#bottom-bar a {
+    margin-right: 15px;
+    color: #1c89b8b8;
+    text-decoration: none;
+
+}
+
+#bottom-bar a:hover {
+    margin-right: 15px;
+    color: #b81f1c7a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#bottom-bar a:last-child {
+    margin-right: 0;
+}
