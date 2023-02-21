@@ -49,7 +49,7 @@ body {
 
 #main {
 
-    background-image: url("/Users/amandaleigh/code/images/kevinart3.png");
+    background-image: url("images/kevinart3.png");
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -80,7 +80,7 @@ body {
     box-shadow: 0 5px 10px rgba(134, 185, 236, 0.444);
     margin: 80px auto;
     width: 80%; /* Change this value to adjust the width of the box */
-    overflow: hidden;
+    overflow: auto;
 }
 
 .box {
