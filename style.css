@@ -73,24 +73,69 @@ body {
     margin: 0;
 }
 
-.box {
-    color: rgba(114, 178, 218, 0.839);
-    background-color: #074a677b;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(134, 185, 236, 0.444);
-    margin: 80px auto;
-    width: 80%; /* Change this value to adjust the width of the box */
-    overflow: auto;
+/* Customize the scrollbar for WebKit-based browsers */
+.box::-webkit-scrollbar {
+  width: 1px;
+  background-color: #e4e4e400;
 }
 
+.box::-webkit-scrollbar-thumb {
+  background-color: #f8f8f8c3;
+  border-radius: 5px;
+}
+
+.box::-webkit-scrollbar-track {
+  background-color: #18181800;
+  border-radius: 1px;
+}
+
+/* Customize the scrollbar for Mozilla-based browsers */
+.box::-moz-scrollbar {
+  width: 1px;
+  background-color: #e4e4e400;
+}
+
+.box::-moz-scrollbar-thumb {
+  background-color: #f8f8f8c3;
+  border-radius: 5px;
+}
+
+.box::-moz-scrollbar-track {
+  background-color: #18181800;
+  border-radius: 1px;
+}
+
+/* Customize the scrollbar for Microsoft Edge */
+.box::-ms-scrollbar {
+  width: 1px;
+  background-color: #e4e4e400;
+}
+
+.box::-ms-scrollbar-thumb {
+  background-color: #f8f8f8c3;
+  border-radius: 5px;
+}
+
+.box::-ms-scrollbar-track {
+  background-color: #18181800;
+  border-radius: 1px;
+}
+
+/* Common style for all browsers */
 .box {
-    color: rgba(114, 178, 218, 0.839);
-    background-color: #074a677b;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(134, 185, 236, 0.444);
-    margin: 80px auto;
-    width: 80%; /* Change this value to adjust the width of the box */
-    overflow: hidden;
+  color: rgba(114, 178, 218, 0.839);
+  background-color: #074a677b;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(134, 185, 236, 0.444);
+  margin: 80px auto;
+  width: 80%; /* Change this value to adjust the width of the box */
+  overflow: scroll;
+}
+
+
+
+
+.box:hover {
     box-shadow: 0 10px 20px rgba(214, 208, 208, 0.2);
     transition: box-shadow ease-in-out;
 }
@@ -114,13 +159,13 @@ body {
   }
   
   .content-photos img {
-    height: 350px;
+    height: 300px;
     border-radius: 5px;
     margin-bottom: 10px;
   }
 
   .content-photos img:hover {
-    height: 350px;
+    height: 300px;
     border-radius: 5px;
     margin-bottom: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
