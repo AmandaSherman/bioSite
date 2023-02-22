@@ -126,7 +126,7 @@ body {
   color: rgba(114, 178, 218, 0.839);
   background-color: #074a677b;
   border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(134, 185, 236, 0.444);
+  box-shadow: 0 5px 10px rgba(20, 51, 82, 0.444);
   margin: 80px auto;
   width: 80%; /* Change this value to adjust the width of the box */
   overflow: scroll;
