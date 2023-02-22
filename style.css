@@ -37,9 +37,10 @@ body {
 }
 
 #sidebar button:hover {
-    background-color: #f0808047;
-    box-shadow: 0 10px 20px rgba(215, 67, 67, 0.374);
-    transition: box-shadow  ease-in-out;
+    background-color: rgba(214, 208, 208, 0.4);
+    box-shadow: 0 5px 10px rgba(214, 208, 208, 0.4);
+    transition: box-shadow 0.2s ease-in-out;
+    transition: background-color 0.1s ease-in-out;
     cursor: pointer;
 }
 
@@ -126,7 +127,7 @@ body {
   color: rgba(114, 178, 218, 0.839);
   background-color: #074a677b;
   border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(20, 51, 82, 0.444);
+  box-shadow: 0 5px 10px rgba(214, 208, 208, 0.2);
   margin: 80px auto;
   width: 80%; /* Change this value to adjust the width of the box */
   overflow: scroll;
@@ -136,8 +137,8 @@ body {
 
 
 .box:hover {
-    box-shadow: 0 10px 20px rgba(214, 208, 208, 0.2);
-    transition: box-shadow ease-in-out;
+    box-shadow: 0 5px 10px rgba(214, 208, 208, 0.4);
+    transition: box-shadow 0.2s ease-in-out;
 }
 
   .box h2 {
@@ -162,20 +163,22 @@ body {
     height: 300px;
     border-radius: 5px;
     margin-bottom: 10px;
+    box-shadow: 0 5px 10px rgba(214, 208, 208, 0.2);
   }
 
   .content-photos img:hover {
     height: 300px;
     border-radius: 5px;
     margin-bottom: 10px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: box-shadow ease-in-out;
+    box-shadow: 0 5px 10px rgba(214, 208, 208, 0.4);
+    transition: box-shadow 0.2s ease-in-out;
   }
 
-  #work-experience, #education {
+  #work-experience {
     width: 100%;
     max-width: 800px;
     margin: 50px auto;
+
   }
   
   .job, .school {
@@ -207,7 +210,7 @@ body {
   }
   
   .job:hover, .school:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(214, 208, 208, 0.2);
     transition: box-shadow 0.2s ease-in-out;
   }
   
