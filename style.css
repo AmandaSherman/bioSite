@@ -28,9 +28,10 @@ body {
 }
 
 #sidebar button {
+  color: rgb(167, 198, 227);
   margin-top: 20px;
   padding: .8em;
-  font-size: large;
+  font-size:larger;
   background-color: #82aae64e;
   border: none;
   border-radius: 4px;
